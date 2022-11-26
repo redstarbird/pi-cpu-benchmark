@@ -1,17 +1,5 @@
 #!/usr/bin/python3
 #Python CPU Benchmark by Alex Dedyura (Windows, macOS, Linux)
-
-import time
-import platform
-import cpuinfo 
-
-os_version = platform.system()
-
-print('Python CPU Benchmark by Alex Dedyura (Windows, macOS(Darwin), Linux)')
-print('CPU: ' + cpuinfo.get_cpu_info().get('brand_raw', "Unknown"))
-print('Arch: ' + cpuinfo.get_cpu_info().get('arch_string_raw', "Unknown"))
-print('OS: ' + str(os_version))
-
 print('\nBenchmarking: \n')
 
 start_benchmark = 10000 # change this if you like (sample: 1000, 5000, etc)
